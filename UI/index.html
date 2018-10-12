@@ -7,18 +7,19 @@
     <title>Store Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="javascript/original.js"></script>
 </head>
 
 <body>
     <section>
         <div class="form">
             <h2 class="login-label">Login</h2>
-            <form action="index.html" method="GET" class="sign">
+            <form action="login.html" method="POST" class="sign" onsubmit="return validate();">
                 <fieldset>
                     <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="e.g eubule@store.com" class="login-input" required>
+                    <input id="email" type="email" name="email" placeholder="e.g eubule@store.com" class="login-input" required>
                     <label for="password">Password</label>
-                    <input type="password" placeholder="Your Password" name="password" class="login-input" required>
+                    <input id="password" type="password" placeholder="Your Password" name="password" class="login-input" required>
                 </fieldset>
                 <input type="submit" name="submit" value="Submit" class="submit-btn">
             </form>
