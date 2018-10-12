@@ -59,6 +59,10 @@ body {
     margin: 0 auto;
 }
 
+.wrap {
+    height: 100%;
+}
+
 .content {
     display: flex;
     overflow: auto;
@@ -76,7 +80,6 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     margin-left: 5px;
-    /* font-size: 1.5em; */
     font-weight: lighter;
 }
 
@@ -128,6 +131,7 @@ body {
     padding: 10px;
     margin: 0px;
     height: 100%;
+    color: teal;
 }
 
 .category {
@@ -159,7 +163,6 @@ hr {
 .img {
     width: 200px;
     margin: 10px;
-    /* visibility: hidden; */
 }
 
 .products {
@@ -170,6 +173,7 @@ hr {
     font-size: 0.7em;
     font-weight: 600;
     display: block;
+    color: rgb(65, 112, 112);
 }
 
 .details-btn {
@@ -190,16 +194,102 @@ hr {
     border-style: solid;
     border-radius: 3px;
     border-width: 0px;
-    /* width: 70px; */
     min-height: 30px;
-    /* margin: 5px 1px; */
     background-color: teal;
     color: white;
     margin-right: 10%;
 }
 
-.details-btn {
-    /* visibility: hidden; */
+.sale-btn {
+    float: right;
+    width: 50px;
+}
+
+.details-lab {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: rgb(53, 122, 85);
+}
+
+.details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: rgb(226, 217, 217);
+    height: 40px;
+    padding: 5px;
+    margin-left: 10px;
+    width: 30%
+}
+
+.narrow {
+    margin-top: 10%;
+}
+
+.label-details {
+    font-weight: 800;
+}
+
+@media(min-width: 1218px) {
+    .wide {
+        width: 50%;
+        float: left;
+    }
+    .narrow {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media(max-width: 1217px) {
+    .product-img {
+        width: 300px;
+        height: 300px;
+    }
+    .details-lab {
+        font-size: 0.8em;
+    }
+    .wide {
+        width: 40%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 7%;
+        width: 60%;
+        float: left;
+    }
+}
+
+@media(max-width: 975px) {
+    .wide {
+        width: 50%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 8%;
+        width: 50%;
+        float: left;
+    }
+}
+
+@media(max-width: 880px) {
+    .wrap {
+        display: inline-block;
+        overflow: auto;
+    }
+    .wide {
+        width: 100%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 0px;
+        width: 100%;
+        float: left;
+    }
+    .navigation {
+        border-style: none;
+        margin-right: 0px;
+    }
 }
 
 @media(min-width: 962px) {
@@ -236,14 +326,14 @@ hr {
 }
 
 @media(max-width: 468px) {
-    .content {
+    /* .content {
         display: inline-block;
         overflow: auto;
         height: 100%;
     }
     .navigation {
         height: 60%;
-    }
+    } */
     .col-narrow {
         width: 60%;
         float: left;
