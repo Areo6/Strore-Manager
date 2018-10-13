@@ -217,7 +217,7 @@ hr {
     border-radius: 0px;
     border-color: rgb(226, 217, 217);
     height: 40px;
-    padding: 5px;
+    padding: 10px;
     margin-left: 10px;
     width: 30%
 }
@@ -228,6 +228,34 @@ hr {
 
 .label-details {
     font-weight: 800;
+}
+
+
+/* Sale Page */
+
+.sale-lab {
+    color: rgb(99, 110, 104);
+    display: block;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+.sale-box {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    width: 80px;
+}
+
+.add-cart {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-style: ridge;
+    border-width: 0px;
+    border-radius: 50%;
+    background: teal;
+    color: white;
 }
 
 @media(min-width: 1218px) {
@@ -326,14 +354,6 @@ hr {
 }
 
 @media(max-width: 468px) {
-    /* .content {
-        display: inline-block;
-        overflow: auto;
-        height: 100%;
-    }
-    .navigation {
-        height: 60%;
-    } */
     .col-narrow {
         width: 60%;
         float: left;
@@ -341,5 +361,8 @@ hr {
     .col-wide {
         width: 40%;
         float: left;
+    }
+    .add-cart {
+        width: 100px;
     }
 }
