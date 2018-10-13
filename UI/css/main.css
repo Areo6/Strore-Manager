@@ -258,6 +258,45 @@ hr {
     color: white;
 }
 
+
+/* Sales Records Page */
+
+.img-sales {
+    width: 400px;
+    margin: 10px;
+}
+
+.product-sales {
+    width: 150px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.product-sold {
+    margin-top: 20px;
+    font-size: 0.7em;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+.cart {
+    display: flex;
+}
+
+.product-price {
+    font-size: 0.9em;
+    margin-bottom: 80px;
+}
+
+.subtotal {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 @media(min-width: 1218px) {
     .wide {
         width: 50%;
