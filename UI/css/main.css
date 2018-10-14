@@ -73,6 +73,7 @@ body {
     height: 100%;
     position: relative;
     border-style: solid;
+    border-color: rgb(206, 188, 188);
     border-width: 1px;
     border-top: 0px;
     border-bottom: 0px;
@@ -116,12 +117,6 @@ body {
     font-weight: 150;
 }
 
-.create-list-btn {
-    position: absolute;
-    bottom: 0px;
-    color: teal;
-}
-
 .plus {
     font-size: 2em;
     font-weight: lighter;
@@ -157,7 +152,7 @@ a {
 
 hr {
     stroke-width: 1px;
-    color: rgb(243, 232, 232);
+    color: rgb(251, 242, 242);
 }
 
 .img {
@@ -325,13 +320,26 @@ hr {
 }
 
 .ad-delete {
-    /* margin-left: 60%; */
     color: rgb(133, 36, 36);
     font-size: 0.8em;
     border-style: none;
     background-color: white;
     text-decoration: underline;
     margin-top: 20px;
+}
+
+
+/* Admin View Products Page */
+
+.ad-add-product-btn {
+    float: right;
+    height: 30px;
+    border-style: ridge;
+    border-radius: 40%;
+    color: teal;
+    background-color: rgb(0, 0, 0);
+    border-width: 0px;
+    margin-left: 10px;
 }
 
 @media(min-width: 1218px) {
@@ -435,6 +443,19 @@ hr {
     .col-wide {
         width: 60%;
         float: left;
+    }
+}
+
+@media(max-width: 727px) {
+    .ad-add-product-btn {
+        float: left;
+    }
+    .category {
+        /* overflow: auto; */
+        height: 110px;
+    }
+    .ad-category {
+        display: block;
     }
 }
 
