@@ -217,9 +217,9 @@ hr {
     border-radius: 0px;
     border-color: rgb(226, 217, 217);
     height: 40px;
-    padding: 10px;
     margin-left: 10px;
-    width: 30%
+    width: 30%;
+    text-align: center;
 }
 
 .narrow {
@@ -297,6 +297,43 @@ hr {
     font-weight: 400;
 }
 
+
+/* Admin Product Details Page */
+
+.ad-details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: rgb(226, 217, 217);
+    height: 40px;
+    margin-left: 10px;
+    width: 23%;
+    text-align: center;
+}
+
+.ad-model {
+    width: 50%;
+}
+
+.ad-edit {
+    margin-left: 60%;
+    color: rgb(133, 36, 36);
+    font-size: 0.8em;
+    border-style: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.ad-delete {
+    /* margin-left: 60%; */
+    color: rgb(133, 36, 36);
+    font-size: 0.8em;
+    border-style: none;
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
 @media(min-width: 1218px) {
     .wide {
         width: 50%;
@@ -305,6 +342,9 @@ hr {
     .narrow {
         width: 50%;
         float: left;
+    }
+    .col2 {
+        margin-top: 5%;
     }
 }
 
@@ -325,6 +365,9 @@ hr {
         width: 60%;
         float: left;
     }
+    .col2 {
+        margin-top: 0px;
+    }
 }
 
 @media(max-width: 975px) {
@@ -336,6 +379,9 @@ hr {
         margin-top: 8%;
         width: 50%;
         float: left;
+    }
+    .col2 {
+        margin-top: 0px;
     }
 }
 

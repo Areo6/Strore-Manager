@@ -12,3 +12,8 @@ function validate() {
         return false;
     }
 }
+
+function edit() {
+    document.getElementById("model").focus();
+    return false;
+}

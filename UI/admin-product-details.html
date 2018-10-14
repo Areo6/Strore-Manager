@@ -39,10 +39,14 @@
                     <img src="images/tv1.jpg" alt="Product details" class="product-img">
                 </div>
                 <div class="narrow col2">
-                    <p class="details-lab"><label class="label-details">Model :</label> Hi-Tech LD24DSMJDD1</p>
-                    <p class="details-lab"><label class="label-details">Price :</label> Ush 390,000</p>
-                    <p class="details-lab"><label class="label-details">Quantity available :</label> 20</p>
-                    <p class="details-lab"><label class="label-details">Minimum Quantity Alowed :</label> 2</p>
+                    <div class="btns">
+                        <button class="ad-delete">Delete</button>
+                        <button class="ad-edit" onclick="edit()">Edit</button>
+                    </div>
+                    <p class="details-lab"><label class="label-details" for="model">Model :</label></label><input id="model" name="model" type="text" value="Hi-Tech LD24DSMJDD1" class="details-lab ad-details-box ad-model"></p>
+                    <p class="details-lab"><label class="label-details" for="price">Price : Ush</label><input name="price" type="number" value="39000" class="details-lab ad-details-box" min="5000"></p>
+                    <p class="details-lab"><label class="label-details" for="quantity">Quantity available :</label><input name="quantity" type="number" value="20" class="details-lab ad-details-box" min="0"></p>
+                    <p class="details-lab"><label class="label-details" for="minimum-qtty">Minimum Quantity Alowed :</label> <input name="minimum-qtty" type="number" value="2" class="details-lab ad-details-box" min="2" max="20"></p>
                     <label class="label-details details-lab" for="category">Category :</label><select name="category" class="details-lab ad-details-box">
                         <option value="televisions">Televisions</option>
                         <option value="cameras">Cameras</option>
