@@ -17,3 +17,8 @@ function edit() {
     document.getElementById("model").focus();
     return false;
 }
+
+function save() {
+    alert("Product Successfully saved");
+    return true;
+}
