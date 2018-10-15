@@ -1,0 +1,542 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+* :before,
+* :after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+
+/* Login form */
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.login-label {
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+.login-input {
+    display: block;
+    min-height: 40px;
+    width: 90%;
+    font-size: 0.8em;
+    margin: 10px 0;
+    border-style: ridge;
+    border-width: 1px;
+}
+
+.submit-btn {
+    float: right;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 0px;
+    width: 100px;
+    min-height: 40px;
+    margin: 5px 1px;
+    background-color: teal;
+    color: white;
+}
+
+
+/* View Products page */
+
+.content-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrap {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    overflow: auto;
+    height: 100%;
+}
+
+.navigation {
+    height: 100%;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(206, 188, 188);
+    border-width: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+
+.profile-img-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.profile-img {
+    border-radius: 50%;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: -moz-middle-with-baseline;
+}
+
+.user-name {
+    margin: 7px;
+    font-weight: 600;
+    color: teal;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-style: none;
+    background: white;
+    text-align: start;
+    font-size: 0.85em;
+    color: gray;
+}
+
+.item-num {
+    font-weight: 150;
+}
+
+.plus {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.main-content {
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    color: teal;
+}
+
+.category {
+    border-style: ridge;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-color: rgb(243, 232, 232);
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.categories {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+hr {
+    stroke-width: 1px;
+    color: rgb(251, 242, 242);
+}
+
+.img {
+    width: 200px;
+    margin: 10px;
+}
+
+.products {
+    display: flex;
+}
+
+.product-desc {
+    font-size: 0.7em;
+    font-weight: 600;
+    display: block;
+    color: rgb(65, 112, 112);
+}
+
+.details-btn {
+    visibility: hidden;
+}
+
+.img:hover .details-btn {
+    visibility: visible;
+}
+
+.img:hover {
+    border-style: solid;
+    border-color: rgb(200, 195, 195);
+    border-width: 1px;
+}
+
+.product-btn {
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 0px;
+    min-height: 30px;
+    background-color: teal;
+    color: white;
+    margin-right: 10%;
+}
+
+.sale-btn {
+    float: right;
+    width: 50px;
+}
+
+.details-lab {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: rgb(53, 122, 85);
+}
+
+.details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: rgb(226, 217, 217);
+    height: 40px;
+    margin-left: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.narrow {
+    margin-top: 10%;
+}
+
+.label-details {
+    font-weight: 800;
+}
+
+
+/* Sale Page */
+
+.sale-lab {
+    color: rgb(99, 110, 104);
+    display: block;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+.sale-box {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    width: 80px;
+}
+
+.add-cart {
+    display: block;
+    width: 200px;
+    height: 40px;
+    border-style: ridge;
+    border-width: 0px;
+    border-radius: 50%;
+    background: teal;
+    color: white;
+}
+
+
+/* Sales Records Page */
+
+.img-sales {
+    width: 400px;
+    margin: 10px;
+}
+
+.product-sales {
+    width: 150px;
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.product-sold {
+    margin-top: 20px;
+    font-size: 0.7em;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+.cart {
+    display: flex;
+}
+
+.product-price {
+    font-size: 0.9em;
+    margin-bottom: 80px;
+}
+
+.subtotal {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+
+/* Admin Product Details Page */
+
+.ad-details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: rgb(226, 217, 217);
+    height: 40px;
+    margin-left: 10px;
+    width: 23%;
+    text-align: center;
+}
+
+.ad-model {
+    width: 50%;
+}
+
+.ad-edit {
+    margin-left: 60%;
+    color: rgb(133, 36, 36);
+    font-size: 0.8em;
+    border-style: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.ad-delete {
+    color: rgb(133, 36, 36);
+    font-size: 0.8em;
+    border-style: none;
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+
+/* Admin View Products Page */
+
+.ad-add-product-btn {
+    float: right;
+    height: 30px;
+    border-style: ridge;
+    border-radius: 40%;
+    color: teal;
+    background-color: rgb(0, 0, 0);
+    border-width: 0px;
+    margin-left: 10px;
+}
+
+
+/* Admin Add Product */
+
+.ad-add-details-box {
+    border-style: ridge;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: rgb(226, 217, 217);
+    height: 40px;
+    margin-left: 10px;
+    width: 23%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.ad-cancel-product-btn {
+    float: left;
+    height: 30px;
+    border-style: ridge;
+    border-radius: 40%;
+    color: white;
+    background-color: rgb(116, 75, 28);
+    border-width: 0px;
+    width: 100px;
+}
+
+.ad-save-product-btn {
+    float: right;
+    height: 30px;
+    border-style: ridge;
+    border-radius: 40%;
+    color: teal;
+    background-color: rgb(0, 0, 0);
+    border-width: 0px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.btns {
+    height: 40px;
+}
+
+.ad-select {
+    position: relative;
+    width: 35%;
+}
+
+.ad-select-options {
+    position: absolute;
+    width: 100%;
+    margin-left: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.ad-category-div {
+    display: flex;
+    position: relative;
+}
+
+.ad-input {
+    position: absolute;
+    width: 95%;
+    margin-left: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+@media(min-width: 1218px) {
+    .wide {
+        width: 50%;
+        float: left;
+    }
+    .narrow {
+        width: 50%;
+        float: left;
+    }
+    .col2 {
+        margin-top: 5%;
+    }
+}
+
+@media(max-width: 1217px) {
+    .product-img {
+        width: 300px;
+        height: 300px;
+    }
+    .details-lab {
+        font-size: 0.8em;
+    }
+    .wide {
+        width: 40%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 7%;
+        width: 60%;
+        float: left;
+    }
+    .col2 {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 975px) {
+    .wide {
+        width: 50%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 8%;
+        width: 50%;
+        float: left;
+    }
+    .col2 {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 880px) {
+    .wrap {
+        display: inline-block;
+        overflow: auto;
+    }
+    .wide {
+        width: 100%;
+        float: left;
+    }
+    .narrow {
+        margin-top: 0px;
+        width: 100%;
+        float: left;
+    }
+    .navigation {
+        border-style: none;
+        margin-right: 0px;
+    }
+}
+
+@media(min-width: 962px) {
+    .col-narrow {
+        width: 20%;
+        float: left;
+    }
+    .col-wide {
+        width: 80%;
+        float: left;
+    }
+}
+
+@media(max-width: 961px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+    .col-wide {
+        width: 70%;
+        float: left;
+    }
+}
+
+@media(max-width: 742px) {
+    .col-narrow {
+        width: 40%;
+        float: left;
+    }
+    .col-wide {
+        width: 60%;
+        float: left;
+    }
+}
+
+@media(max-width: 727px) {
+    .ad-add-product-btn {
+        float: left;
+    }
+    .category {
+        /* overflow: auto; */
+        height: 110px;
+    }
+    .ad-category {
+        display: block;
+    }
+}
+
+@media(max-width: 468px) {
+    .col-narrow {
+        width: 60%;
+        float: left;
+    }
+    .col-wide {
+        width: 40%;
+        float: left;
+    }
+    .add-cart {
+        width: 100px;
+    }
+}

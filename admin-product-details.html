@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="javascript/original.js"></script>
+</head>
+
+<body>
+    <div class="content-wrap content">
+        <div class="col-narrow navigation">
+            <a href="admin_sales_records.html">
+                <div class="profile-img-label">
+                    <img src="images/profile.jpg" alt="Profile Picture" width="30px" height="30px" class="profile-img">
+                    <div class="user-name">
+                        <label>Eric</label>
+                    </div>
+                </div>
+            </a>
+            <label class="categories">Categories</label>
+            <hr />
+            <a href="admin_view_products.html"><button class="btn">> Televisions <label class="item-num">(103)</label> </button></a>
+            <a href="admin_view_products.html"><button class="btn">> Cameras <label class="item-num">(23)</label></button></a>
+            <a href="admin_view_products.html"><button class="btn">> Musical Instruments <label class="item-num">(43)</label></button></a>
+            <a href="admin_view_products.html"><button class="btn">> Decoders <label class="item-num">(78)</label> </button></a>
+            <a href="admin_view_products.html"><button class="btn">> Audio & Video</Video> <label class="item-num">(34)</label></button></a>
+            <a href="admin_view_products.html"><button class="btn">> DVD Players <label class="item-num">(6)</label></button></a>
+        </div>
+        <div class="col-wide main-content">
+            <div class="Category">
+                <label>Hi-Tech &emsp;</label>
+            </div>
+            <div class="content-wrap wrap">
+                <div class="wide">
+                    <img src="images/tv1.jpg" alt="Product details" class="product-img">
+                </div>
+                <div class="narrow col2">
+                    <div class="btns">
+                        <button class="ad-delete">Delete</button>
+                        <button class="ad-edit" onclick="edit()">Edit</button>
+                    </div>
+                    <p class="details-lab"><label class="label-details" for="model">Model :</label></label><input id="model" name="model" type="text" value="Hi-Tech LD24DSMJDD1" class="details-lab ad-details-box ad-model"></p>
+                    <p class="details-lab"><label class="label-details" for="price">Price : Ush</label><input name="price" type="number" value="39000" class="details-lab ad-details-box" min="5000"></p>
+                    <p class="details-lab"><label class="label-details" for="quantity">Quantity available :</label><input name="quantity" type="number" value="20" class="details-lab ad-details-box" min="0"></p>
+                    <p class="details-lab"><label class="label-details" for="minimum-qtty">Minimum Quantity Alowed :</label> <input name="minimum-qtty" type="number" value="2" class="details-lab ad-details-box" min="2" max="20"></p>
+                    <label class="label-details details-lab" for="category">Category :</label><select name="category" class="details-lab ad-details-box">
+                        <option value="televisions">Televisions</option>
+                        <option value="cameras">Cameras</option>
+                        <option value="instructions">Musical Instruments</option>
+                        <option value="decoders">Decoders</option>
+                        <option value="players">Players</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
