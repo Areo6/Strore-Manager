@@ -8,7 +8,7 @@ function validate() {
         alert("Wrong Password for Admin User")
         return false;
     } else {
-        window.location = "login.html"
+        window.location = "view_products.html"
         return false;
     }
 }
@@ -20,5 +20,10 @@ function edit() {
 
 function save() {
     alert("Product Successfully saved");
+    return true;
+}
+
+function add() {
+    alert("Product successfully Added to the cart");
     return true;
 }
