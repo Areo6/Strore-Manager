@@ -410,7 +410,7 @@ hr {
     left: 0px;
 }
 
-@media(min-width: 1218px) {
+@media only screen and (min-width: 1218px) {
     .wide {
         width: 50%;
         float: left;
@@ -424,7 +424,7 @@ hr {
     }
 }
 
-@media(max-width: 1217px) {
+@media only screen and (max-width: 1217px) {
     .product-img {
         width: 300px;
         height: 300px;
@@ -446,7 +446,7 @@ hr {
     }
 }
 
-@media(max-width: 975px) {
+@media only screen and (max-width: 975px) {
     .wide {
         width: 50%;
         float: left;
@@ -461,7 +461,7 @@ hr {
     }
 }
 
-@media(max-width: 880px) {
+@media only screen and (max-width: 880px) {
     .wrap {
         display: inline-block;
         overflow: auto;
@@ -481,7 +481,7 @@ hr {
     }
 }
 
-@media(min-width: 962px) {
+@media only screen and (min-width: 962px) {
     .col-narrow {
         width: 20%;
         float: left;
@@ -492,7 +492,7 @@ hr {
     }
 }
 
-@media(max-width: 961px) {
+@media only screen and (max-width: 961px) {
     .col-narrow {
         width: 30%;
         float: left;
@@ -503,7 +503,7 @@ hr {
     }
 }
 
-@media(max-width: 742px) {
+@media only screen and (max-width: 742px) {
     .col-narrow {
         width: 40%;
         float: left;
@@ -514,7 +514,7 @@ hr {
     }
 }
 
-@media(max-width: 727px) {
+@media only screen and (max-width: 727px) {
     .ad-add-product-btn {
         float: left;
     }
@@ -527,14 +527,23 @@ hr {
     }
 }
 
-@media(max-width: 468px) {
+@media only screen and (max-width: 600px) {
+    .wrap {
+        /* height: 50%; */
+    }
+    .content-wrap {
+        display: inline-block;
+        overflow: auto;
+    }
     .col-narrow {
-        width: 60%;
+        width: 100%;
         float: left;
+        height: 50%;
     }
     .col-wide {
-        width: 40%;
+        width: 100%;
         float: left;
+        /* height: 50%; */
     }
     .add-cart {
         width: 100px;
